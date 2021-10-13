@@ -1,0 +1,436 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    
+ }
+ /*header*/
+ h1{
+    position: absolute;
+    margin-left: 15px;
+    font-family: Sans-serif;
+    margin-top: 20px;
+
+ }
+ /*paragraph*/
+ p{
+    position: absolute;
+    bottom: 100px;
+    margin-left: 20px;
+    font-family: Sans-serif ;
+    font-weight: 400;
+ }
+/*different shapes and sizes divs*/
+   /*hexagon with gradient*/ 
+.hexagon-shape {  
+    z-index: -1;
+    opacity: 50%;
+    bottom: 180px;
+    right: 210px;
+    display: flex;
+    align-items:center;
+    position: absolute;
+    overflow: hidden;
+    background: transparent;
+    /* add slash at the end of line to see the rhombus *
+    outline: solid 1px red;/**/
+    width: 200px;
+    height: 200px;
+    transform: rotate(-30deg) skewX(30deg) scaleY(.866);   
+    }
+.hexagon-shape:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background: linear-gradient(59.82deg, #0976CE 0%, #0976CE 49.36%, #3A91D7 50.11%, #3A91D7 100%);
+    content: '';   
+    }    
+
+
+ /*hexa2*/
+#hexagon{   
+    width: 100px;
+    height: 55px;
+    background: #0082c8;
+    position: relative;
+    bottom: 220px;
+    left: 300px;
+    display: flex;
+    align-items:center;
+    position: absolute;   
+    }
+
+#hexagon:before
+{   content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #0082c8;
+}
+
+#hexagon:after
+{   content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #0082c8;
+}
+    
+    /*top big hexa3*/
+.hexagon {
+    bottom: 170px;
+    right: 10px;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: rgb(117, 115, 0);
+    }
+.hexagon:before, .double:after {
+    position: absolute;
+    content: '';
+    }
+.hexagon:before {
+    position: absolute;
+    content: '';
+    top: 20px;  /* border width */
+    left: 20px;  /* border width */
+    height: calc(100% - 40px);  /* 100% - (2 * border width) */
+    width: calc(100% - 40px);  /* 100% - (2 * border width) */
+    background: rgb(231, 221, 161);
+    position: absolute;
+    content: '';
+    }
+.hexagon, .hexagon:before, .double:after {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+   
+
+    /*big hexa2 middle*/
+.hexagoon {
+    bottom: 20px;
+    right: 110px;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: rgb(92, 10, 10);
+
+    }
+.hexagoon:before, .double:after {
+    position: absolute;
+    content: '';
+    }
+.hexagoon:before {
+    position: absolute;
+    content: '';
+    top: 20px;  /* border width */
+    left: 20px;  /* border width */
+    height: calc(100% - 40px);  /* 100% - (2 * border width) */
+    width: calc(100% - 40px);  /* 100% - (2 * border width) */
+    background: rgb(198, 240, 198);
+    position: absolute;
+    content: '';
+    }
+.hexagoon, .hexagoon:before, .double:after {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+
+/*big left side hexa3 */
+.hexxagoon {
+    bottom: 20px;
+    right: 310px;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: rgb(3, 102, 102);
+
+    }
+.hexxagoon:before, .double:after {
+    position: absolute;
+    content: '';
+    }
+.hexxagoon:before {
+    position: absolute;
+    content: '';
+    top: 20px;  /* border width */
+    left: 20px;  /* border width */
+    height: calc(100% - 40px);  /* 100% - (2 * border width) */
+    width: calc(100% - 40px);  /* 100% - (2 * border width) */
+    background: rgb(198, 240, 198);
+    position: absolute;
+    content: '';
+    }
+.hexxagoon, .hexxagoon:before, .double:after {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+
+/*black margin hexa*/
+.hex {
+    top: 50px;
+    right: 87px;
+    width: 104px;
+    height: 60px;
+    background-color: rgb(125, 187, 238);
+    position: absolute;
+}
+.hex2 {
+    top: 50px;
+    right: 100px;
+    width: 106px;
+    height: 62px;
+    background-color: #000;
+    position: absolute;
+}
+.hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid rgb(125, 187, 238);
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+}
+
+.hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid rgb(125, 187, 238);
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+
+.hex2:before {
+  content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid #000;
+    border-left: 52px solid transparent;
+    border-right: 54px solid transparent;
+    position: absolute;
+    top: -30px;
+}
+
+.hex2:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -32px;
+    border-top: 32px solid #000;
+    border-left: 54px solid transparent;
+    border-right: 52px solid transparent;
+}
+/*hexagon img related with hex + hex2 */
+.hexagonimg {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background: url("thisPhoto.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    right:48px;
+    top:14px;
+    margin: 1px auto;
+    height: 130px;
+    width: 130px;      
+  }
+/*vertical lines*/
+.vl {
+    border-left: 6px solid green;
+    height: 52px;
+    position: absolute;
+    bottom: 220px;
+    right: 407px;
+    }  
+.vl1{
+    border-left: 6px solid green;
+    height: 45px;
+    position: absolute;
+    bottom: 25px;
+    right: 107px;    
+}
+.vl2 {
+    border-left: 6px solid green;
+    height: 52px;
+    position: absolute;
+    top: 220px;
+    right: 107px;
+    } 
+    /*oblic lines*/ 
+.one{
+    position: absolute;
+    bottom: 69px;
+    right: 539px;
+    border-top:6px solid rgb(3, 102, 102);
+    width:70px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    }
+.two{
+    position: absolute;
+    bottom: 20px;
+    right: 490px;
+    border-top:6px solid green;
+    width:70px;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;              
+}
+.three{
+    position: absolute;
+    bottom: 20px;
+    right: 595px;
+    border-top:6px solid rgb(133, 130, 6);
+    width:70px;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;              
+}
+.four{
+    position: absolute;
+    bottom: 69px;
+    right: 643px;
+    border-top:6px solid rgb(92, 10, 10);
+    width:70px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    }
+
+.five{
+    position: absolute;
+    bottom: 20px;
+    right: 700px;
+    border-top:6px solid rgb(3, 17, 9);
+    width:70px;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;              
+}
+.six{
+    height: 45px;
+    position: absolute;
+    bottom: 31px;
+    right: 61px;
+    border-top:6px solid rgb(92, 10, 10);
+    width:50px;
+    transform: rotate(-10deg);
+    transform-origin: 0% 0%;
+    }
+.seven{
+    height: 45px;
+    position: absolute;
+    bottom: 128px;
+    right: 69px;
+    border-top: 8px solid rgb(3, 17, 9);
+    width: 40px;
+    transform: rotate(25deg);
+    transform-origin: 0% 0%;
+    }
+/*png social networks*/
+.linkedin{
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+.linkedin img {
+    width: 100%;
+    height: auto;
+    
+}
+.linkedin:hover {background-color: none}
+
+.linkedin:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.twitter{
+    position: absolute;
+    bottom: 50px;
+    left: 73px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+
+}
+.twitter img {
+    width: 100%;
+    height: auto;
+
+}
+.twitter:hover {background-color: none}
+
+.twitter:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.instagram{
+    position: absolute;
+    bottom: 50px;
+    left: 132px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+   
+}
+.instagram img {
+    width: 100%;
+    height: auto;
+    border:none;
+}
+.instagram:hover {background-color: none}
+
+.instagram:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.facebook{
+    position: absolute;
+    bottom: 50px;
+    left: 193px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+.facebook img {
+    width: 100%;
+    height: auto;
+}
+.facebook:hover {background-color: none}
+
+.facebook:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.gmail{
+    position: absolute;
+    bottom: 50px;
+    left: 256px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+.gmail img {
+    width: 100%;
+    height: auto;
+}
+.gmail:hover {background-color: none}
+.gmail:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
