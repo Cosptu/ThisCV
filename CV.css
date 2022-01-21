@@ -506,7 +506,7 @@ hr{
     width: 100%;
     height: auto;
 }
- 
+ /*
 @media screen and (max-width: 600px) {
     body {
 font-size: 14px;
@@ -522,7 +522,7 @@ font-size: 16px;
 font-size: 20px;
     }
 }
-
+*/
 @keyframes bubble {
     to {
         transform: translateY(-5vh) scale(2);
